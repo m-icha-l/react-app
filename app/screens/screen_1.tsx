@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { Text, View, TextInput, TouchableOpacity, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import AntDesign from '@expo/vector-icons/AntDesign';
 import { useRouter } from "expo-router";
 
 export default function TabLayout() {
@@ -15,6 +16,16 @@ export default function TabLayout() {
             paddingHorizontal: 20,
             justifyContent: "center"
         }}>
+            <View>
+                <TouchableOpacity style ={{
+                    position: "absolute",
+                    bottom: 125, 
+                }}
+                    onPress={() => router.push("/")}
+                >
+                    <AntDesign name="arrowleft" size={54} color="black" />
+                </TouchableOpacity>
+            </View>
             
             <Text style={{
                 fontSize: 32,

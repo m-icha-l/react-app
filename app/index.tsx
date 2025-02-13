@@ -42,7 +42,7 @@ export default function TabLayout() {
                 marginBottom: 15,
                 height: 50
             }}>
-                <Ionicons name="person-outline" size={20} color="black"/>
+                <Ionicons name="mail-outline" size={20} color="black"/>
 
                 <TextInput style ={{
                     flex: 1,
@@ -100,7 +100,7 @@ export default function TabLayout() {
                     Don't have an account? </Text>
 
                 <Pressable
-                onPress={() => router.push("./screens/screen_1")}
+                onPress={() => router.navigate("./screens/screen_1")}
                 >
                     <Text style = {{
                         color:"#FFA500",
